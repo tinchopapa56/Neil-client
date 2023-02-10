@@ -7,7 +7,7 @@ import { Box, Heading,  Text, Stack, Divider, Avatar, Spinner, Button, Textarea,
 import { useStore } from '../../../app/stores/store';
 import * as Yup from 'yup';
 import { formatDistanceToNow } from 'date-fns'
-import I1 from "../../../../public/3.jpg"
+import I1 from "../../../../public/1.jpg"
 
 interface Props {
     activityId: string;
