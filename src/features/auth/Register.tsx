@@ -91,7 +91,7 @@ const Register = () => {
             <Spinner />
           ) : <Button colorScheme="twitter" onClick={() => handleSubmit()} type="submit" >Register</Button>}
         
-          <Text pt={2}>¿Ya tenes una cuenta? <Link href="/login">Login</Link></Text>
+          <Text pt={2}>¿Ya tenes una cuenta? <Link href="/neil-client/login">Login</Link></Text>
 
         </Stack>
       </form>

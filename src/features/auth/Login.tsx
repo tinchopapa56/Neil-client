@@ -71,7 +71,7 @@ const Login = () => {
           ) : <Button onClick={()=>handleSubmit()} type="submit" colorScheme="twitter" >Iniciar sesión</Button>
           }
 
-          <Text pt={4}>¿No tienes una cuenta? <Link href="/register">Regístrate</Link></Text>
+          <Text pt={4}>¿No tienes una cuenta? <Link href="/neil-client/register">Regístrate</Link></Text>
         </Stack>
       </form>
         

@@ -57,7 +57,7 @@ import { useStore } from '../stores/store';
                   </PopoverTrigger>
                   <PopoverContent w={200} border={0} boxShadow={'xl'} p={4} rounded={'xl'}>
                       <Stack>
-                        <Text as={Link} href={`/profiles/${userStore.user?.username}`}>Go to Profile</Text>
+                        <Text as={Link} href={`/neil-client/profiles/${userStore.user?.username}`}>Go to Profile</Text>
                         <Button onClick={()=> userStore.logout()} display={{ base: 'none', md: 'inline-flex' }} fontSize={'sm'} fontWeight={600} color={'white'} bg={'teal.300'} _hover={{bg: 'teal.400',}}>
                           Logout
                         </Button>
@@ -67,19 +67,19 @@ import { useStore } from '../stores/store';
               
               ):(
               <>
-                <Link href={"/login"} p={".5em 0"} fontSize={'xl'}  _hover={{   textDecoration: 'none'}}>
+                <Link href={"/neil-client/login"}  p={".5em 0"} fontSize={'xl'}  _hover={{   textDecoration: 'none'}}>
                   <Button display={{ base: 'none', md: 'inline-flex' }} fontSize={'sm'} fontWeight={600} color={'white'} bg={'teal.300'} _hover={{bg: 'teal.400',}}>
                     Sign in
                   </Button>
                 </Link>
-                <Link href={"/register"} p={".5em 0"} fontSize={'xl'}  _hover={{   textDecoration: 'none'}}>
+                <Link href={"/neil-client/register"}  p={".5em 0"} fontSize={'xl'}  _hover={{   textDecoration: 'none'}}>
                   <Button display={{ base: 'none', md: 'inline-flex' }} fontSize={'sm'} fontWeight={600} color={'white'} bg={'pink.400'} _hover={{bg: 'pink.300',}}>
                     Sign Up
                   </Button>
                 </Link>
               </>
             )}
-            <Link href={"/createActivity"} p={".5em 0"} fontSize={'xl'}  _hover={{   textDecoration: 'none'}}>
+            <Link href={"/neil-client/createActivity"} p={".5em 0"} fontSize={'xl'}  _hover={{   textDecoration: 'none'}}>
               <Button display={{ base: 'none', md: 'inline-flex' }} fontSize={'sm'} fontWeight={600} color={'white'} bg={"green.200"} onClick={()=> activityStore.openForm()} _hover={{bg: 'green.300',}}>
                 Create Activity
               </Button>
@@ -217,7 +217,7 @@ import { useStore } from '../stores/store';
   const NAV_ITEMS: Array<NavItem> = [
     {
       label: 'Activities',
-      href: '/activities',
+      href: '/neil-client/activities',
       children: [
         {
           label: 'Top Upcoming activities',
@@ -227,7 +227,7 @@ import { useStore } from '../stores/store';
         {
           label: 'Recent & Upcoming activities (This month)',
           subLabel: 'Up-and-coming Designers',
-          href: "/activities/recent",
+          href: "/neil-client/activities/recent",
         },
       ],
     },

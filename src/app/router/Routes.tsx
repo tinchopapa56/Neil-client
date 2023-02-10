@@ -10,11 +10,11 @@ import Login from '../../features/auth/Login';
 import Register from '../../features/auth/Register';
 import ErrorPage from '../../features/errors/ErrorPage';
 import ProfilePage from '../../features/Profiles/ProfilePage';
-import RequireAuth from './RequireAuth';
 
 export const routes: RouteObject[] = [
     {
-        path:"/",
+        path:"/neil-client/",
+        // path:"/",
         element: <App />,
         children: [
             // {element: <RequireAuth />, children:[
